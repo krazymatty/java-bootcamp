@@ -6,8 +6,15 @@ public class Human {
 	String weight;
 	String eyeColor;
 	
-	String getInfo() {
+	String getInfo () {
 		return "Gender: " + gender + ", Height: " + height + ", Weight: " + weight +
 				", Eye Color: " +  eyeColor;
+	}
+	
+	void setProperties (String gender, String height, String weight, String eyeColor) {
+		this.gender = gender;
+		this.height = height;
+		this.weight = weight;
+		this.eyeColor = eyeColor;
 	}
 }
