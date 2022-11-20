@@ -8,9 +8,9 @@ public class RunnableClass {
 		philipMatthews.eyeColor = "Hazel";
 		philipMatthews.gender = "male";
 		philipMatthews.height = "6'0\"";
-		philipMatthews.weight = "240";
+		philipMatthews.weight = "240lbs";
 		
-		System.out.println(philipMatthews);
+		System.out.println(philipMatthews.getInfo());
 
 	}
 
