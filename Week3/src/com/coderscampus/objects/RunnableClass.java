@@ -3,7 +3,14 @@ package com.coderscampus.objects;
 public class RunnableClass {
 
 	public static void main(String[] args) {
-		System.out.println("Test");
+		Human philipMatthews = new Human();
+		
+		philipMatthews.eyeColor = "Hazel";
+		philipMatthews.gender = "male";
+		philipMatthews.height = "6'0\"";
+		philipMatthews.weight = "240";
+		
+		System.out.println(philipMatthews);
 
 	}
 
