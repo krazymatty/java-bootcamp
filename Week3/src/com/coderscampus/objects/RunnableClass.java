@@ -10,13 +10,13 @@ public class RunnableClass {
 		System.out.println("Type a number between 50 and 300");
 		String userInput = scan.next();
 		
-		YourDigits result1 = new YourDigits();
-		result1.enteredDigits(userInput);
+		YourDigits userResults = new YourDigits();
+		userResults.theUserInput(userInput);
 		
-		if (result1.getResult() == 0)
+		if (userResults.getResults() == 0)
 			System.out.println("The number you typed in was: null");
 		else {
-			System.out.println("The number you typed in was: " + result1.getResult());
+			System.out.println("The number you typed in was: " + userResults.getResults());
 		}
 		
 		/*Human philipMatthews = new Human();

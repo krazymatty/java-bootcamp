@@ -4,7 +4,7 @@ public class YourDigits {
 	int convertedString; 	
 	int resultingNumber;
 	
-	int getResult() {
+	int getResults() {
 		if (convertedString < 50 || convertedString > 300 ) {
 			resultingNumber =  0;
 			return resultingNumber;
@@ -13,7 +13,7 @@ public class YourDigits {
 			return resultingNumber;
 		}	
 	}
-	void enteredDigits(String userInput) {
+	void theUserInput(String userInput) {
 		 
 		convertedString = Integer.parseInt(userInput);
 		
