@@ -5,30 +5,27 @@ import java.util.Scanner;
 public class RunnableClass {
 
 	public static void main(String[] args) {
-		
+		int theResult;
+
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Type a number between 50 and 300");
-		String userInput = scan.next();
+		do {
+
+			String userInput = scan.next();
+
+			YourDigits userResults = new YourDigits();
+			userResults.theUserInput(userInput);
+
+			theResult = userResults.getResults();
+			
+			if (theResult < 50 || theResult > 300) {
+				System.out.println("Oops, that number wasn't between 50 and 300, try again:");
+			}
+		} 
+
+		while (theResult < 50 || theResult > 300);
 		
-		YourDigits userResults = new YourDigits();
-		userResults.theUserInput(userInput);
-		
-		if (userResults.getResults() == 0)
-			System.out.println("The number you typed in was: null");
-		else {
-			System.out.println("The number you typed in was: " + userResults.getResults());
-		}
-		
-		/*Human philipMatthews = new Human();
-		Human joniMatthews = new Human();
-		
-		philipMatthews.setProperties("Male", "6' 0\"", "255lbs", "Hazel");
-		joniMatthews.setProperties("Female", "5' 5\"", "130lbs", "Blue");	
-		
-		System.out.println(philipMatthews.getInfo());
-		System.out.println(joniMatthews.getInfo());*/
-		
-		/*YourDigits runNumbers = new YourDigits();*/
-	scan.close();
+		System.out.println("The number you typed in was:  "+ theResult);
+		scan.close();
 	}
 }
