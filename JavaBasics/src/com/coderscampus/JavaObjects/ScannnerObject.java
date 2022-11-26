@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ScannnerObject {
 
-	public static void main (String[] args) {
+	public static void ScannerObject() {
 
 		// Declaring a scan object
 		Scanner scan = new Scanner(System.in);
