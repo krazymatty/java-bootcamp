@@ -1,0 +1,5 @@
+Assignment 3 notes:
+
+I have the username validaion working.
+
+we now need iterate over the key value pairs to look for a matching password
