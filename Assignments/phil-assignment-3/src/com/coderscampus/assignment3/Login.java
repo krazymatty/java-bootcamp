@@ -14,6 +14,7 @@ public class Login {
 		BufferedReader fileReader = null;
 		try {
 			fileReader = new BufferedReader(new FileReader("data.txt"));
+			
 			String line;
 			while ((line = fileReader.readLine()) != null) {
 
