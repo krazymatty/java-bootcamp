@@ -1,0 +1,33 @@
+*random number 
+*range of values 
+*init chances
+
+*message error 
+*input guesses
+
+Messages: 
+	1.  “Please pick a higher number” (if the number they chose is lower than the randomly generated number), or
+	2.  “Please pick a lower number” (if the number they chose is higher than the randomly generated number), or
+	3.	“You win!” (if they guess the correct number)
+	4.	“You lose, the number to guess was theRandomNumber” 
+	
+	
+	
+______________________________________________________________________	
+
+
+initiazle int numberOfGuessesRemaining = 5
+initialize int random number, Instantiate Random and store as variable: 
+print message: "Pick a number bewtween 1 and 100."
+
+scan: userInput
+compare userInput to Random number.
+
+if guesses == 0 then break: “You lose, the number to guess was theRandomNumber” - Game Over
+while number of guesses is >= 0 loop
+if input == randomNumber then “You win!”
+ if input > random and between 1 & 100: message: “Please pick a lower number” then i--
+	Else IF input < random and between 1 & 100: message: “Please pick a higer number” then i--
+	else message: "Pick a number bewtween 1 and 100."
+
+
