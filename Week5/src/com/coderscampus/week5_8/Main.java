@@ -3,7 +3,7 @@ package com.coderscampus.week5_8;
 public class Main {
 
 	public static void main(String[] args) {
-		String input = "\"exampleUser\", \"examplePassword\", \"exampleName\"";
+		String input = "exampleUser, examplePassword, exampleName";
 		
 		//UserService userService = new UserService();
 		

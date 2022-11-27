@@ -15,7 +15,7 @@ public class UserService {
 		User user = new User();
 		user.setUsername(username);
 		user.setPassword(password);
-		user.setPassword(name);
+		user.setName(name);
 		return user;
 	}
 }
