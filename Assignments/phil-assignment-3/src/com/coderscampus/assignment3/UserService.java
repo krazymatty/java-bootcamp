@@ -13,7 +13,6 @@ public class UserService {
 	public static String username = null;
 	public static String password = null;
 	public static String name = null;
-	public static String validateUser = null;
 	public static String[] userArray = null;
 	public static Boolean userAuth = null;
 
@@ -39,7 +38,7 @@ public class UserService {
 
 	}
 
-	public static void getUsers() {
+	private static void getUsers() {
 		String line = null;
 		try (BufferedReader fileReader = new BufferedReader(new FileReader("data.txt"))) {
 
@@ -68,10 +67,10 @@ public class UserService {
 			}
 
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 
@@ -92,12 +91,7 @@ public class UserService {
 
 	}
 
-	public static String[] getResults() {
-
-		return userArray;
-	}
-
-	public static void failedAttempts() {
+	private static void failedAttempts() {
 
 		System.out.println("You have too many failed login attempts: Your account is locked!");
 	}

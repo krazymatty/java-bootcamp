@@ -1,4 +1,3 @@
-krazymatty@gmail.com,matty1234,krazymatty
 test@email.com,passwordTest!1,test user
 another@user.com,asdfasdf,Another User
 john.doe@mydomain.net,Hdk398jf!,john Doe
