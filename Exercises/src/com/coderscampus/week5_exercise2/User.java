@@ -1,4 +1,4 @@
-package com.coderscampus.assignment3;
+package com.coderscampus.week5_exercise2;
 
 public class User {
 	String username;
