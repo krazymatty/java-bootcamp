@@ -1,32 +1,32 @@
 package com.coderscampus.assignment3;
 
 public class User {
-	String username;
-	String password;
-	String name;
+	static String username;
+	static String password;
+	static String name;
 
-	public String getUsername() {
+	public static String getUsername() {
 		return username;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public static void setUsername(String username) {
+		User.username = username;
 	}
 
-	public String getPassword() {
+	public static String getPassword() {
 		return password;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public static void setPassword(String password) {
+		User.password = password;
 	}
 
-	public String getName() {
+	public static String getName() {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public static void setName(String name) {
+		User.name = name;
 	}
 
 }
