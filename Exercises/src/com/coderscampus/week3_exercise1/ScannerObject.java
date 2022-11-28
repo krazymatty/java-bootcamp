@@ -3,21 +3,21 @@ package com.coderscampus.week3_exercise1;
 import java.util.Scanner;
 
 public class ScannerObject {
-	int convertedString;
-	String message;
+	public Integer convertedString;
+	public String message;
 
 	public ScannerObject(String message) {
 		System.out.println(message);
-		// Declaring a scan object
 		Scanner scan = new Scanner(System.in);
 		convertedString = Integer.parseInt(scan.next());
 
-		// close scan instance
 		scan.close();
 	}
 
-	int getResults() {
-
+	public Integer getResults() {
+		if (convertedString < 50 || convertedString > 300) {
+			return null;
+		}
 		return convertedString;
 	}
 }
