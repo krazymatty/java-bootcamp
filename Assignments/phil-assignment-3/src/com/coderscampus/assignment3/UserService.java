@@ -45,15 +45,20 @@ public class UserService {
 
 			while ((line = fileReader.readLine()) != null) {
 				userArray = parseText(line);
-				createUser(userArray[0],userArray[1],userArray[2]);
-				if (username.equals(userArray[0].toLowerCase()) && password.equals(userArray[1])) {
+				createUser(userArray[0].toString(), userArray[1].toString(), userArray[2].toString());
+
+				String theUsername = User.getUsername();
+				String thePassword = User.getPassword();
+
+				if (username.equals(theUsername.toLowerCase()) && password.equals(thePassword)) {
 					userAuth = true;
 					break;
 				}
 			}
 			fileReader.close();
 			if (userAuth != null) {
-				name = Arrays.stream(userArray[2].split("\\s+")).map(t -> t.substring(0, 1).toUpperCase() + t.substring(1))
+				String theName = User.getName();
+				name = Arrays.stream(theName.split("\\s+")).map(t -> t.substring(0, 1).toUpperCase() + t.substring(1))
 						.collect(Collectors.joining(" "));
 				System.out.println("Welcome: " + name);
 			} else {
@@ -80,9 +85,9 @@ public class UserService {
 
 	public static User createUser(String username, String password, String name) {
 		User user = new User();
-		user.setUsername(username);
-		user.setPassword(password);
-		user.setName(name);
+		User.setUsername(username);
+		User.setPassword(password);
+		User.setName(name);
 		return user;
 
 	}
